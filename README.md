@@ -16,3 +16,13 @@ pip install signatory==1.2.6.1.9.0 --no-cache-dir --force-reinstall
 pip install cupy-cuda102
 pip install -r requirements.txt
 ```
+
+## Data
+For this challenge, the training data is located at [data/ref_data.pkl](data/). This data includes one single path representing the price and volatility processes of a synthetic asset. The path is sampled from `[0, 10]` with `20480` time steps, following the SDE described in competition description. The data is stored in a `.pkl` file and the data shape is `[1, 20480, 3]`.
+
+## Sample submission
+We also provide a sample submission bundle at [sample_submission_bundle](sample_submission_bundle/) which includes: 
+1) `calibrated_params.pkl`: Dictionary of the calibrated parameters.
+2) `model.py`: Script of your model architecture, model loading, and data generation.
+
+Finally, we wish you good luck during the competition and most importantly, have fun!!!
